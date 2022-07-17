@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./assets/vite.4a748afd.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Web site created using create-snowpack-app"
+    />
+
+    
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+
+    <title>Weather App</title>
+    <script type="module" crossorigin src="./assets/index.b822bf12.js"></script>
+    <link rel="stylesheet" href="./assets/index.561a17a7.css">
+  </head>
+  <body class="h-screen grid items-center">
+  
+    <main class="text-center max-w-md	m-auto font-montserrat">
+      <form class="mt-7" action="">
+        <input class="focus:outline-none border-b bg-transparent" placeholder="Sao Pablo -Br" type="text">
+        <button class="text-gray-400 font-medium ml-3">Search</button>
+      </form>
+
+      <div class="mt-10">
+        <h2 class="font-medium text-3xl text-gray-500 dark:text-gray-400" id="city"></h2>
+        <h3 class="m-3 font-medium text-gray-500 dark:text-gray-400" id="day"></h3>
+      </div>
+
+      <div class="mt-10">
+        <img class="m-auto" src="" width="152px" alt="icon weather" id="image">
+      </div>
+
+      <div class="mt-10 mb-3">
+        <h2 class="font-medium text-5xl text-gray-700 dark:text-gray-400" id="temp"></h2>
+        <p class="mt-2 font-normal text-xl text-gray-500 dark:text-gray-500" id="description"></p>
+      </div>
+
+      <div class="mb-3">____</div>
+
+      <div class="grid grid-cols-3 mt-9">
+        <div class="border-r pl-4 pr-4">
+          <img class="m-auto" src="https://cdn4.iconfinder.com/data/icons/the-weather-is-nice-today/64/weather_44-512.png" alt="humidity" width="30px">
+          <h3 class="text-gray-500 dark:text-gray-400">Humedad</h3>
+          <p class="font-medium text-xl text-gray-600 dark:text-gray-400"  id="humidity"></p>
+        </div>
+        <div class="border-r pl-4 pr-4">
+          <img class="m-auto" src="https://cdn0.iconfinder.com/data/icons/weather-line-19/32/Windy-256.png" alt="wind" width="30px">
+          <h3 class="text-gray-500 dark:text-gray-400">Viento</h3>
+          <p class="font-medium text-xl text-gray-600 dark:text-gray-400" 3 id="wind"></p>
+        </div>
+        <div class="pl-4 pr-4">
+          <img class="m-auto" src="https://cdn0.iconfinder.com/data/icons/weather-line-19/32/Thermometer_Hot-256.png" alt="sensation" width="30px">
+          <h3 class="text-gray-500 dark:text-gray-400">Sensación</h3>
+          <p class="font-medium text-xl text-gray-600 dark:text-gray-400" id="sensation"></p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Add more scripts here -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+  </body>
+</html>
